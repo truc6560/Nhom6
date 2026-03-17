@@ -51,6 +51,7 @@ class ViDuController extends Controller
                     ->get();
         return view("toprevenues", compact("movies"));
     }
+    
 //7.4
     public function longmovies()
     {
