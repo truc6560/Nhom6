@@ -68,10 +68,4 @@ class BookController extends BaseController
     $category = Category::find(4);
     $category->delete();
   }
-
-  public function hihi()
-  {
-    return "NLKD";
-  }
-
 }

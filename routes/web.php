@@ -13,21 +13,9 @@ use App\Http\Controllers\BookController;
 |
 */
 
-Route::get('/ktra','App\Http\Controllers\ktraController@form');
-Route::post('/tinhtuoi','App\Http\Controllers\ktraController@tinhtuoi');
+Route::get("/dien","App\Http\Controllers\ViDuController@hihi");
 
-
-Route::get("/qlsach/theloai","App\Http\Controllers\BookController@laythongtintheloai");
-Route::get("/qlsach/thongtinsach","App\Http\Controllers\BookController@laythongtinsach");
-Route::get("/qlsach/themtheloai","App\Http\Controllers\BookController@them_dl");
-Route::get("/qlsach/suatheloai","App\Http\Controllers\BookController@sua_dl");
-Route::get("/qlsach/sachkinhdien","App\Http\Controllers\BookController@laysachkinhdien");
-Route::get("/qlsach/xoatheloai","App\Http\Controllers\BookController@xoa_dl");
-
-
-Route::get("/dien","App\Http\Controllers\BookController@hihi");
-
-
+Route::get("/truc","App\Http\Controllers\ViDuController@test1");
 
 Route::get("/phanthingoc","App\Http\Controllers\ViDuController@test2");
 
@@ -35,4 +23,3 @@ Route::get("nguyenbuiminhtu","App\Http\Controllers\ViDuController@btn");
 
 Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
 
->>>>>>> e6388b742e28fc988e38e3f84aaffe2876c48e09
