@@ -33,7 +33,7 @@ class ViDuController extends Controller
   {
     $TL = DB::table('genre')
         ->select('genre_name','genre_name_vn')->get();
-    return view('sach', compact('TL'));
+    return view('danhsach', compact('TL'));
   }
 //7.2
     function topmovies()
