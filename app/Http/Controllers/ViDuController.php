@@ -11,9 +11,9 @@ class ViDuController extends Controller
     $name = "HUB";
     return view('test', ["name1"=>$name]);
  }
-
+}
     function test2(){
-      return "Phan Thị Ngọc";
+      return "Phan Th? Ng?c";
      }
 
     function btn(){
@@ -21,14 +21,19 @@ class ViDuController extends Controller
     }
 
     function btnn(){
-      return "Nguyễn Thị Bích Trâm";
+      return "Nguy?n Th? B�ch Tr�m";
     }
+    function phimCanada(){
+        $phim = DB::table('movie')->where('country_name', 'Canada')->get();
+        return view('canada', compact('phim'));
+    }
+}
 
     function hihi() {
-      return "Nguyễn Lê Kiều Duyên";
+      return "Nguy?n L� Ki?u Duy�n";
     }
     function test1() {
-      return "Nguyễn Ngọc Bảo Trúc";
+      return "Nguy?n Ng?c B?o Tr�c";
     }
 //7.3
     function topmovies()
