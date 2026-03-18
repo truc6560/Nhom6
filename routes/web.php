@@ -12,6 +12,6 @@ Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
 
 Route::get("/xephangtop10","App\Http\Controllers\ViDuController@topmovies");
 Route::get("/bophimCanada","App\Http\Controllers\ViDuController@phimCanada");
-Route::get("/phim","App\Http\Controllers\ViDuController@topmovies");
+Route::get("/phim","App\Http\Controllers\ViDuController@longmovies");
 Route::get("dsgenre","App\Http\Controllers\ViDuController@ds");
 Route::get("/xephangdoanhthu","App\Http\Controllers\ViDuController@toprevenues"); 
