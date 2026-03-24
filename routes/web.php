@@ -19,9 +19,5 @@ Route::get("/phimdai","App\Htpp\Controllers\ViDuController@getLongMovies");
 Route::get('/trang1','App\Http\Controllers\ViduLayoutController@trang1');
 Route::get('/sach','App\Http\Controllers\ViduLayoutController@sach');
 Route::get('sach/chitiet/{id}','App\Http\Controllers\ViduLayoutController@chitiet');
-<<<<<<< HEAD
 Route::get('/sach/theloai/{id_loai}', 'App\Http\Controllers\ViduLayoutController@sachTheoTheLoai');
-=======
-Route::get('sach/theloai/{id}','App\Http\Controllers\ViduLayoutController@theloai');
 
->>>>>>> 5d727777ec0484d28a6f03583ba454281dfb10f6

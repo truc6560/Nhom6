@@ -1,11 +1,6 @@
 <x-book-layout :theloai="$theloai">
-<<<<<<< HEAD
-    <x-slot name="title">
-        Chi tiết: {{$data->tieu_de}}
-=======
     <x-slot name='title'>
         Chi tiết: {{ $data->tieu_de }}
->>>>>>> 5d727777ec0484d28a6f03583ba454281dfb10f6
     </x-slot>
 
     <style>

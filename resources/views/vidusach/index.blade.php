@@ -20,30 +20,7 @@
         }
     </style>
 </head>
-
-<<<<<<< HEAD
 <x-book-layout :theloai="$theloai">
-=======
-<x-book-layout>
-    <x-slot name='title'>
-        Sách
-    </x-slot>
-
-    <div class='list-book'>
-        @foreach($data as $row)
-            <div class='book'>
-                <a href="{{ url('sach/chitiet/'.$row->id) }}">
-                    <img src="{{ asset('images/'.$row->file_anh_bia) }}" width='200px' height='200px'>
-                    <br>
-                    <b>{{ $row->tieu_de }}</b>
-                    <br/>
-                    <i>{{ number_format($row->gia_ban, 0, ",", ".") }}đ</i>
-                </a>
-            </div>
-        @endforeach 
-    </div> 
-</x-book-layout> 
->>>>>>> 5d727777ec0484d28a6f03583ba454281dfb10f6
   <x-slot name='title'>
     Sách
 </x-slot>
