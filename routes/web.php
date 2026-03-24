@@ -16,3 +16,4 @@ Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
 Route::get("/xephangtop10","App\Http\Controllers\ViDuController@topmovies");
 Route::get("/phimdai","App\Htpp\Controllers\ViDuController@getLongMovies");
 
+

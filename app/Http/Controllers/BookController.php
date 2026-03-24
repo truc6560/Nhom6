@@ -68,4 +68,11 @@ class BookController extends BaseController
     $category = Category::find(4);
     $category->delete();
   }
+  public function ds()
+  {
+    $TL = DB::table('genre')
+        ->select('genre_name','genre_name_vn')->get();
+    return view('sach', compact('TL'));
+  }
+
 }
