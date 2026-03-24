@@ -25,3 +25,4 @@ Route::get("/qlsach/sachkinhdien","App\Http\Controllers\BookController@laysachki
 Route::get("/qlsach/xoatheloai","App\Http\Controllers\BookController@xoa_dl");
 
 Route::get("/bophimCanada","App\Http\Controllers\ViDuController@phimCanada");
+
