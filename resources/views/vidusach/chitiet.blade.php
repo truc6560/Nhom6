@@ -1,6 +1,6 @@
 <x-book-layout>
     <x-slot name='title'>
-        Chi tiết
+        Chi tiết: {{ $data->tieu_de }}
     </x-slot>
 
     <style>
@@ -8,6 +8,12 @@
             display: grid;
             grid-template-columns: 30% 70%;
             gap: 20px;
+            margin-bottom: 20px;
+        }
+        .book-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover; 
         }
     </style>
 
@@ -15,50 +21,20 @@
     
     <div class='info'>
         <div>
-            <img src="{{ asset('images/'.$data->file_anh_bia) }}" width="200px" height="200px">
+            <img src="{{ asset('images/'.$data->file_anh_bia) }}" class="book-img">
         </div>
         <div>
-            Nhà cung cấp: <b>{{ $data->nha_cung_cap }}</b><br>
-            Nhà xuất bản: <b>{{ $data->nha_xuat_ban }}</b><br>
-            Tác giả: <b>{{ $data->tac_gia }}</b><br>
-            Hình thức bìa: <b>{{ $data->hinh_thuc_bia }}</b><br>
+            <p>Nhà cung cấp: <b>{{ $data->nha_cung_cap }}</b></p>
+            <p>Nhà xuất bản: <b>{{ $data->nha_xuat_ban }}</b></p>
+            <p>Tác giả: <b>{{ $data->tac_gia }}</b></p>
+            <p>Hình thức bìa: <b>{{ $data->hinh_thuc_bia }}</b></p>
         </div>
     </div>
 
     <div class='row'>
         <div class='col-sm-12'>
             <b>Mô tả:</b><br>
-            {{ $data->mo_ta }}
+            <p>{{ $data->mo_ta }}</p>
         </div>
     </div>
-
-    <div class="mt-2">17</div>
-    <x-slot name="title">
-        Chi tiết: {{$data->tieu_de}}
-    </x-slot>
-<style>
-.info
-{
-display:grid;
-grid-template-columns:repeat(2,30% 70%);
-}
-</style>
-<h4>{{$data->tieu_de}}</h4>
-<div class='info'>
-<div>
-<img src="{{asset('images/'.$data->file_anh_bia)}}" width="200px" height="200px">
-</div>
-<div>
-Nhà cung cấp: <b>{{$data->nha_cung_cap}}</b><br>
-Nhà xuất bản: <b>{{$data->nha_xuat_ban}}</b><br>
-Tác giả: <b>{{$data->tac_gia}}</b><br>
-Hình thức bìa: <b>{{$data->hinh_thuc_bia}}</b><br>
-</div>
-</div>
-<div class='row'>
-<div class='col-sm-12'>
-<b>Mô tả:</b><br>
-{{$data->mo_ta}}
-</div>
-</div>
 </x-book-layout>
