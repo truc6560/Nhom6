@@ -36,6 +36,6 @@ height='200px'><br>
         <b>{{$row->tieu_de}}</b><br/>
         <i>{{number_format($row->gia_ban,0,",",".")}}đ</i>
 </a>
-    </div>
+            </div>
+        @endforeach </div>
 </x-book-layout>
-</div>

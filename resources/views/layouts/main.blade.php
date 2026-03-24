@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>@yield('title')</title>
+    <title>{{ $title ?? 'Trang Sách' }}</title>
     <link rel="stylesheet"  
  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
@@ -10,7 +10,7 @@
       <img src="{{asset('images/banner_sach.jpg')}}" width="1000px">
     </header>
     <main>
-      @yield('content')
+      {{ $slot }}
     </main>
     <footer>
       <div class='row' style='text-align:center'>
