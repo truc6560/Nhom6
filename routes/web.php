@@ -10,6 +10,10 @@ Route::get("/phanthingoc","App\Http\Controllers\ViDuController@test2");
 Route::get("nguyenbuiminhtu","App\Http\Controllers\ViDuController@btn");
 Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
 
+
+
+Route::get("/bophimCanada","App\Http\Controllers\ViDuController@phimCanada");
+
 Route::get("/xephangtop10","App\Http\Controllers\ViDuController@topmovies");
 Route::get("/bophimCanada","App\Http\Controllers\ViDuController@phimCanada");
 Route::get("/phim","App\Http\Controllers\ViDuController@longmovies");
