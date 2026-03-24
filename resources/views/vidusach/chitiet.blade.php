@@ -1,4 +1,4 @@
-<x-book-layout>
+<x-book-layout :theloai="$theloai">
     <x-slot name='title'>
         Chi tiết: {{ $data->tieu_de }}
     </x-slot>
@@ -28,6 +28,7 @@
             <p>Nhà xuất bản: <b>{{ $data->nha_xuat_ban }}</b></p>
             <p>Tác giả: <b>{{ $data->tac_gia }}</b></p>
             <p>Hình thức bìa: <b>{{ $data->hinh_thuc_bia }}</b></p>
+            <p>Giá bán: <b style="color:red">{{ number_format($data->gia_ban, 0, ",", ".") }}đ</b></p>
         </div>
     </div>
 
