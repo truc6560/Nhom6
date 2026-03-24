@@ -19,4 +19,5 @@ Route::get("/phimdai","App\Htpp\Controllers\ViDuController@getLongMovies");
 Route::get('/trang1','App\Http\Controllers\ViduLayoutController@trang1');
 Route::get('/sach','App\Http\Controllers\ViduLayoutController@sach');
 Route::get('sach/chitiet/{id}','App\Http\Controllers\ViduLayoutController@chitiet');
+Route::get('sach/theloai/{id}','App\Http\Controllers\ViduLayoutController@theloai');
 
