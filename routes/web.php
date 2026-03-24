@@ -40,3 +40,5 @@ Route::get('/sach/chitiet/{id}','App\Http\Controllers\ViduLayoutController@chiti
 
 Route::get("/bophimCanada","App\Http\Controllers\ViDuController@phimCanada");
 
+//giờ thử xem có chạy được không nhé!!
+
