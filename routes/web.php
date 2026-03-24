@@ -11,14 +11,22 @@ Route::get("/truc","App\Http\Controllers\ViDuController@test1");
 
 Route::get("/phanthingoc","App\Http\Controllers\ViDuController@test2");
 
-Route::get("nguyenbuiminhtu","App\Http\Controllers\ViDuController@btn");
-
 Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
 
 Route::get("/xephangtop10","App\Http\Controllers\ViDuController@topmovies");
 Route::get("/phim","App\Http\Controllers\ViDuController@topmovies");
 
 Route::get("/xephangdoanhthu","App\Http\Controllers\ViDuController@toprevenues"); 
+
+Route::get("/xephangtop10","App\Http\Controllers\ViDuController@longmovies");
+
+Route::get("/bophimCanada","App\Http\Controllers\ViDuController@phimCanada");
+
+
+Route::get('/sach','App\Http\Controllers\ViduLayoutController@sach');
+Route::get('/sach/theloai/{id}','App\Http\Controllers\ViduLayoutController@theloai');
+Route::get('/sach/chitiet/{id}','App\Http\Controllers\ViduLayoutController@chitiet');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
