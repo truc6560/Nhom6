@@ -16,4 +16,7 @@ Route::get("/nguyenthibichtram","App\Http\Controllers\ViDuController@btnn");
 Route::get("/xephangtop10","App\Http\Controllers\ViDuController@topmovies");
 Route::get("/phimdai","App\Htpp\Controllers\ViDuController@getLongMovies");
 
+Route::get('/trang1','App\Http\Controllers\ViduLayoutController@trang1');
+Route::get('/sach','App\Http\Controllers\ViduLayoutController@sach');
+Route::get('sach/chitiet/{id}','App\Http\Controllers\ViduLayoutController@chitiet');
 
