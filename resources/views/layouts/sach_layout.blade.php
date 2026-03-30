@@ -19,7 +19,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="">Tiểu thuyết</a>
               </li>
-              . . . .
+              <li class="nav-item">
+                <a class="nav-link" href=""></a>
+              </li>
             </ul>
           </nav>
           <img src="{{asset('images/sidebar_1.jpg')}}" width="100%" class='mt-1'>

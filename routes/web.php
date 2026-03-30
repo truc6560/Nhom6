@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/trang1','App\Http\Controllers\ViduLayoutController@trang1');
+Route::get('/sach','App\Http\Controllers\ViduLayoutController@sach');
+Route::get('sach/chitiet/{id}','App\Http\Controllers\ViduLayoutController@chitiet');
+Route::get('sach/theloai/{id}','App\Http\Controllers\ViduLayoutController@theloai');
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,4 +25,4 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__.'/auth.php'; //
