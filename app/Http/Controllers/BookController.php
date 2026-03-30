@@ -68,4 +68,6 @@ class BookController extends BaseController
     $category = Category::find(4);
     $category->delete();
   }
+
+
 }
